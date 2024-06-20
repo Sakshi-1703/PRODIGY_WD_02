@@ -1,0 +1,83 @@
+<!--SAKSHI<*_*>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop Watch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<!--BODY-->
+<body>
+
+  <!--HEADER-->
+  <div class="head">
+    <img src="head1.jpg" alt="head">
+  <b><p> Welcome to Your Study Stopwatch !</p></b>
+  <img src="head2.jpg" alt="head">
+</div>
+
+  <div class="container">
+
+    <!--THEME-->
+    <div class="customization">
+      <h2>Choose Your Style!</h2>
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <label for="color-scheme">Color-Scheme:</label>
+      <select id="color-scheme">
+        <option value="pastel-pink">Pastel Pink</option>
+        <option value="lavender">Lavender</option>
+        <option value="mint-green">Mint Green</option>
+        <option value="ocean-blue">Ocean Blue</option>
+        <option value="forest-green">Forest Green</option>
+      </select>
+      <label for="font-style">Font-Style:</label>
+      <select id="font-style"></select>
+    </div>
+
+    <!--STOPWATCH-->
+    <div class="Clock">
+      <h1>And Your Time starts now...!</h1>
+      <div class="display">
+        <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+      </div>
+      <!--CONTROLS-->
+      <div class="controls">
+        <button id="start"><i class="fas fa-play"></i></button>
+        <button id="pause" disabled><i class="fas fa-pause"></i></button>
+        <button id="reset" disabled><i class="fas fa-redo-alt"></i></button>
+        <button id="lap" disabled><i class="fas fa-flag-checkered"></i></button>
+      </div>
+      <!--LAPS-->
+      <div class="laps">
+        <h2>Study Laps</h2>
+        <ol id="lap-list"></ol>
+      </div>
+    </div>
+
+    <div class="widgets">
+      <!--CURRENT DATE-->
+      <div class="date">
+        <h2>Current Date</h2>
+        <div id="current-date"></div>
+      </div>
+      <!--ANALOG CLOCKR-->
+      <div class="analog-clock">
+        <h2>What time is it?</h2>
+        <div id="analog-clock-container"></div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
